@@ -11,4 +11,42 @@ $primary-text-color:   #212121;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
 
+.flex {
+	display: flex;
+}
 
+.flex-col {
+	flex-direction: column;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.items-end {
+	align-items: flex-end;
+}
+
+.header {
+	background-color: $primary-color;
+	height: 150px;
+	width: 100vw;
+}
+
+.dark-bg {
+	background-color: $primary-color-dark;
+	height: 20px;
+}
+
+.article-preview {
+	max-width: 700px;
+	min-width: 350px;
+}

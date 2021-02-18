@@ -1,4 +1,4 @@
-<section>
+<main class='flex flex-col justify-center items-center'>
 	<% if @articles.length === 0 %>
 	  <h1> No articles to show </h1>
 	<% else %>
@@ -6,4 +6,8 @@
 	    <%= render partial: 'articles/article_preview', locals: {article: article} %>
 	  <%end%>
 	<% end %>
-</section>
+	<aside class='aside-social float-right'>
+		<div class='social-media'>
+		</div>
+	</aside>
+</main>
