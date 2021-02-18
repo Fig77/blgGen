@@ -3,7 +3,7 @@
 	  <h1> No articles to show </h1>
 	<% else %>
 	  <% @articles.each do |article| %>
-	    <%= render 'articles/article_preview', locals: {article: @article} %>
+	    <%= render partial: 'articles/article_preview', locals: {article: article} %>
 	  <%end%>
 	<% end %>
 </section>
