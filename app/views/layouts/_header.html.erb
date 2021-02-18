@@ -2,7 +2,7 @@
 	<div>
 		<% if user_signed_in? %>
 		  <div>
-		  	<a>Create an Article</a>
+		  	<%= link_to "Create Article", articles_new_path %>
 		  	<%= link_to "Log out", destroy_user_session_path%>
 		  </div>
 		<% else %>

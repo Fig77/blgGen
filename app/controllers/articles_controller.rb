@@ -1,14 +1,15 @@
 class ArticlesController < ApplicationController
 	def index
 		@articles = Article.all
+    p @article
 	end
 
 	def new
 		@article = Article.new
 	end
 
-	def cretae
-    @article = Article.new(article_params)
+	def create
+    @article = current_user.articles.new(article_params)
 
     if @article.save
       redirect_to @article
@@ -42,6 +43,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :body)
+    params.require(:article).permit(:title, :body, :user_id)
   end
 end
