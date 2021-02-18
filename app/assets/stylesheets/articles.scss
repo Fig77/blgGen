@@ -1,7 +1,6 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-
 $primary-color-dark:   #D32F2F;
 $primary-color:        #F44336;
 $primary-color-light:  #FFCDD2;
@@ -10,6 +9,15 @@ $accent-color:         #FF4081;
 $primary-text-color:   #212121;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
+
+html {
+	font-family: 'Lato', sans-serif;
+}
+
+a, a:link, a:active {
+	color: inherit;
+	text-decoration: inherit;
+}
 
 .flex {
 	display: flex;
@@ -47,6 +55,9 @@ $divider-color:        #BDBDBD;
 
 .dark-bg {
 	background-color: $primary-color-dark;
+	color: #fafafa;
+	font-weight: 26px;
+	text-decoration: underline;
 	height: 20px;
 }
 
