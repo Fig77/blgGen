@@ -35,6 +35,10 @@ $divider-color:        #BDBDBD;
 	align-items: flex-end;
 }
 
+.float-right {
+	float: right;
+}
+
 .header {
 	background-color: $primary-color;
 	height: 150px;
