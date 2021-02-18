@@ -1,7 +1,6 @@
 class ArticlesController < ApplicationController
 	def index
 		@articles = Article.all
-    p @article
 	end
 
 	def new
@@ -38,6 +37,7 @@ class ArticlesController < ApplicationController
 
   def destroy
     Article.destroy(params[:id])
+    render :index
   end
 
   private

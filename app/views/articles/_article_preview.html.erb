@@ -5,8 +5,8 @@
 	</p>
 	<div>
 		<% if user_signed_in? %>
-		  <a>Edit</a>
-		  <a>Destroy</a>
+		  <%= link_to "Edit", edit_article_path(article), method: :get %>
+		  <%= link_to "Delete", article_path(article), method: :delete %>
 		<% end %>
 	</div>
 </div>
